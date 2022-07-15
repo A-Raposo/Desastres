@@ -27,9 +27,10 @@ public class VetanaDesastres extends Ventana implements ActionListener {
     }
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
-        for (int i = 0; i < new evolución(2012,2016,"Chile").getDesastres().size(); i++) {
-            area.append(new evolución().getDesastres().toString()+"\n");
+        for (int i = 0; i < new evolución(2012, 2016, "Chile").getDesastres().size(); i++) {
+            area.append(new evolución(2012,2016,"Chile").getDesastres().toString()+"\n");
         }
+
     }
 }
 
